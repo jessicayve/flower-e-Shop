@@ -2,7 +2,7 @@ import { Heart, MagnifyingGlass, ShoppingCart } from "phosphor-react"
 import styled from "styled-components"
 import { useNavigate } from "react-router-dom";
 import { goToProductDetailPage } from "../routes/coordinator";
-import { product } from "../data";
+
 
 
 
@@ -66,12 +66,8 @@ const Icon = styled.div`
     transform: scale(1.1);
   }
 `
-const CardContainer = styled.div`
-   background-color: pink;
-`
-const Name = styled.p`
 
-`
+
 const Product = ({ product }) => {
 
   const navigate = useNavigate()
