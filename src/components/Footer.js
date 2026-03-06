@@ -77,7 +77,7 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-            <Logo>Jessica Yve</Logo>
+            <Logo>Jane</Logo>
             <Desc>
             There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -119,7 +119,7 @@ const Footer = () => {
             </ContactItem>
             <ContactItem>
             <EnvelopeSimple style={{marginRight:"10px"}} size={20} />
-                yve.jessica@gmail.com
+                pudim@pudim.com.br
             </ContactItem>
             <Payment src="https://i.ibb.co/Qfvn4z6/payment.png"/>
 

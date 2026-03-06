@@ -35,6 +35,7 @@ const Container = styled.div`
   &:hover ${Info}{
     opacity: 1;
   }
+  
 `;
 
 const Circle = styled.div`
@@ -46,7 +47,7 @@ const Circle = styled.div`
 `;
 
 const Image = styled.img`
-  height: 75%;
+  height: 100%;
   z-index: 2;
 `;
 
@@ -64,16 +65,23 @@ const Icon = styled.div`
     background-color: #e9f5f5;
     transform: scale(1.1);
   }
-`;
-const Product = ({ item }) => {
+`
+const CardContainer = styled.div`
+   background-color: pink;
+`
+const Name = styled.p`
+
+`
+const Product = ({ product }) => {
 
   const navigate = useNavigate()
   
 
     return (
         <Container>
-            <Circle />
-            <Image src={item.img} />
+        
+          <Circle />
+            <Image src={product.img} />
             <Info  onClick={() => goToProductDetailPage(navigate,product.id)}>
                 <Icon>
                     <ShoppingCart size={28} />
@@ -85,6 +93,10 @@ const Product = ({ item }) => {
                     <Heart size={28} />
                 </Icon>
             </Info>
+            <p>{product.name}</p>
+            
+         
+         
         </Container>
     )
 }
